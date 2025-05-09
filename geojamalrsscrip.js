@@ -4,7 +4,7 @@ const logoBase = "https://blogger.googleusercontent.com/img/a/AVvXsEiSUkC8yJpjNx
 const defaultThumbSize = "80";
 const defaultThumbUrl = `${logoBase}${defaultThumbSize}`;
 
-const MAX_RESULTS = 20;
+const MAX_RESULTS = 22;
 const GROUPED_CACHE_EXPIRY = 7 * 24 * 60 * 60 * 1000; // 7 days
 const RSS_BLOCK_CACHE_EXPIRY = 7 * 24 * 60 * 60 * 1000;
 
