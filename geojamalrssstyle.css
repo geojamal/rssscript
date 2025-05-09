@@ -191,9 +191,9 @@
 .rss-feed-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
+  gap: 5px;
   background: #f9f9f9;
-  padding: 16px;
+  padding: 0px;
   border-radius: 0 0 8px 8px;
 }
 
@@ -261,9 +261,10 @@
   border-bottom: 1px solid #ddd;
 }
 .rss-list-item a {
-  color: #333;
+ /* color: #333; */
   text-decoration: none;
   font-weight: bold;
+ font-size: 13px
 }
 .rss-list-item a:hover {
   color: #0057b7;
