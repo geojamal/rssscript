@@ -1,0 +1,270 @@
+ /* ========== Controls ========== */
+.controls {
+  text-align: center;
+  margin: 30px 0;
+}
+.control-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e0f7fa;
+  color: #006064;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.control-pill:hover {
+  background: #0057b7;
+  color: white;
+  transform: scale(1.05);
+}
+.control-pill i {
+  font-size: 1rem;
+}
+
+/* ========== Categories ========== */
+.category-header {
+  background: #0057b7;
+  color: white;
+  padding: 8px 20px;
+  font-size: 1.2rem;
+  user-select: none;
+  transition: background 0.4s ease, color 0.4s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.category.open .category-header {
+  background: #757575;
+  color: #ffffff;
+}
+.category-header i {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.category-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+.category.open .category-content {
+  max-height: none;
+  padding: 20px;
+}
+
+/* ========== Cards ========== */
+.card {
+  background: #f8f9fc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.card a.full-link {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  text-indent: -9999px;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.card i {
+  font-size: 1.5rem;
+  color: #0057b7;
+  margin-bottom: 10px;
+  display: block;
+}
+.card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #0057b7;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+.card a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========== Standard RSS Block ========== */
+#rss-feed-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+
+
+}
+.rss-block {
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.rss-block ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+.rss-block li {
+  margin-bottom: 10px;
+  font-size: 0.92rem;
+}
+.rss-block li a {
+  color: #0057b7;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rss-block li a:hover {
+  color: #1F0E88;
+}
+.rss-block li a img {
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.rss-block h3 {
+  display: inline-block;
+  margin: 0;
+  font-size: 1rem;
+}
+.rss-block button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+/* ========== Enhanced RSS Sections (grid, card, list) ========== */
+.rss-section {
+  margin-bottom: 8px;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #757575; /* original color  #0057b7 #757575 */
+  color: white;
+  padding: 6px 20px;
+  /* border-radius: 8px 8px 0 0; */
+}
+.section-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.refresh-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.refresh-btn:hover {
+  color: #ffeb3b;
+}
+.rss-feed-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Card Layout */
+.rss-post-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.rss-post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.rss-post-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.rss-post-card h4 {
+  margin: 10px 12px;
+  font-size: 1rem;
+  color: #0057b7;
+  line-height: 1.4;
+}
+.rss-post-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Grid Layout */
+.rss-item {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.rss-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.rss-item a {
+  color: #0057b7;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.rss-item a:hover {
+  color: #1f0e88;
+}
+
+/* List Layout */
+.rss-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.rss-list-item a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.rss-list-item a:hover {
+  color: #0057b7;
+}
