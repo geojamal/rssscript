@@ -1,3 +1,4 @@
+ 
 /* ========== Controls ========== */
 .controls {
   text-align: center;
@@ -67,6 +68,14 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.card a.full-link {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  text-indent: -9999px;
 }
 .card:hover {
   transform: translateY(-4px);
@@ -260,4 +269,3 @@
 .rss-list-item a:hover {
   color: #0057b7;
 }
-
