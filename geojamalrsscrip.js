@@ -1,4 +1,4 @@
-<script>
+
 /* === Global Config and Constants === */
 const logoBase = "https://blogger.googleusercontent.com/img/a/AVvXsEiSUkC8yJpjNxc77EUF_f-m-1sl4yM4N7CUWgKhAEtbRZTib9lOEdrvZfmzgMgzCOst_rMNIDyACpMT2v_PBHnwcRc7HyGmlR2h4Yj5Es-c0KNMSp7sJpqSeNACH2u-7s9Cjjv7ceZGtE83MeEdO-4CAFe9BPeoNAO6ubZablGyjFl529aRBd327EPIU-w=s";
 const defaultThumbSize = "80";
@@ -255,4 +255,3 @@ function createRssCard(layout, title, link, thumbnail) {
   }
   return "";
 }
-</script>
